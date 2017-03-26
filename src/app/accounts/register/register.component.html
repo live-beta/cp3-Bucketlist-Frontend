@@ -1,0 +1,28 @@
+<selection>
+  <div class="">
+    <h1>Register</h1>
+    <div class="" *ngFor="let err for errors">
+      <p><span></span>{{err}}</p>
+    </div>
+    <form role="form" (submit)="register($event, username.value, email.value, password.value)">
+    <div class="">
+      <label for="username">Username</label>
+      <input type="text" #username class="form-control" id="username" placeholder="Username">
+
+    </div>
+    <div class="">
+      <label for="email">Email </label>
+      <input type="email" #email class="form-control" id="email" placeholder="example@email.com">
+
+    </div>
+    <div class="">
+      <label for="passworde">Password</label>
+      <input type="password" #username class="form-control" id="password" placeholder="********">
+
+    </div>
+    <button type="submit" name="button">Submit</button>
+    <br>
+    <a [routerLink]="['/login']">Already signed up? Login here</a>
+    </form>
+  </div>
+</selection>

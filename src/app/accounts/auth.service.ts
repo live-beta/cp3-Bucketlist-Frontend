@@ -5,6 +5,6 @@ import { tokenNotExpired } from 'angular2-jwt';
   export class AuthService{
     constructor(){}
       loggedIn(){
-        return tokenNotExpired('token')
+        return tokenNotExpired('token');
   }
 }
