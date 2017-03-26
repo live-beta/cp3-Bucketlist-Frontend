@@ -1,0 +1,25 @@
+<!-- Html block for the login components.-->
+
+<div class="">
+  <h1>Login</h1>
+  <!-- Anticipating login errors  -->
+
+  <div class="" *ngIf="login_errors"> Login Error</div>
+
+  <!-- form to take in the user details for authentication -->
+
+  <form class="" action="index.html" method="post">
+
+  <label for="username">Username</label>
+  <div class="">
+    <input type="text" #username class="" id="username" placeholder="User-Name">
+  </div>
+  <div class="">
+    <label for="password">Password</label>
+    <input type="password" #password class = "" id = "password" placeholder="Password">
+  </div>
+  <button type="submit" class="">Submit</button>
+<!-- An option for the user to register if they are not able to log into the system -->
+  <a [routerLink]="['/register']"]>Signup</a>
+</form>
+</div>
